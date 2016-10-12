@@ -4,6 +4,15 @@
   <artifactId>test.httpClient</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>	
+		<!-- 与浏览器参数设置有关，参考lazyTest-UI-Tem -->
+		<!-- <BrowserCoreType>2</BrowserCoreType> -->
+		<!-- 这个东西一般false,否则会跳过测试 -->
+        <maven.test.skip>false</maven.test.skip>
+  </properties>
+  
 <dependencies>  
 		 <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
